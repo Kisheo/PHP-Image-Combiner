@@ -38,11 +38,11 @@ foreach ($images as $imagePath) {
     // Add text to image
     imagettftext($newImage, $fontSize, 0, $x, $y, $textColor, $font, $text);
 
-    // Save the new image
+    // Saving the new image
     $outputPath = $outputDir . '/' . basename($imagePath);
     imagejpeg($newImage, $outputPath);
 
-    // Clean up
+    // Cleaning up
     imagedestroy($image);
     imagedestroy($newImage);
 }
