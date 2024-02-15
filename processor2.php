@@ -27,7 +27,7 @@ foreach ($images as $imagePath) {
     imagecopy($newImage, $image, 0, $height, 0, 0, $width, $height);
 
     // Add text
-    $text = "www.socozy.us";
+    $text = " ";
     $font = __DIR__ . '/Arial.ttf'; // Specify path to a TrueType font
     $textColor = imagecolorallocate($newImage, 255, 255, 255); // White text
 
