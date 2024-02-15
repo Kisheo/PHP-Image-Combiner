@@ -26,7 +26,7 @@ foreach ($images as $imagePath) {
     imagecopy($newImage, $image, 0, 0, 0, 0, $width, $height);
     imagecopy($newImage, $image, 0, $height, 0, 0, $width, $height);
 
-    // Add text
+    // Adding text
     $text = " ";
     $font = __DIR__ . '/Arial.ttf'; // Specify path to a TrueType font
     $textColor = imagecolorallocate($newImage, 255, 255, 255); // White text
@@ -38,14 +38,14 @@ foreach ($images as $imagePath) {
     $x = ($width - $textWidth) / 2;
     $y = ($height * 2 + $textHeight) / 2;
 
-    // Add text to image
+    // Adding text to image
     imagettftext($newImage, $fontSize, 0, $x, $y, $textColor, $font, $text);
 
-    // Save the new image
+    // Saving the new image
     $outputPath = $outputDir . '/' . basename($imagePath);
     imagejpeg($newImage, $outputPath);
 
-    // Clean up
+    // Cleaning up
     imagedestroy($image);
     imagedestroy($newImage);
 }
