@@ -37,7 +37,7 @@ foreach ($images as $imagePath) {
     $fontSize = $baseFontSize * ($width / 1280);
 
     $text = "socozy.us";
-    $font = __DIR__ . '/Arial.ttf'; // Path to your TrueType font
+    $font = __DIR__ . '../Arial.ttf'; // Path to your TrueType font
     $textColor = imagecolorallocate($image, 255, 255, 255); // White text
 
     // Calculate text position
