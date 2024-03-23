@@ -17,9 +17,29 @@ This PHP script processes images in a specified directory, duplicating each imag
 ## Installation
 
 1. **Set Up XAMPP**: Ensure XAMPP is installed and running on your machine. The Apache server needs to be active.
-2. **Clone Repository**: Clone this repository into your `htdocs` directory of XAMPP or the respective directory of your server setup.
+
+2. Enable the GD library in XAMPP:
+
+   - Locate php.ini: Find the php.ini file in your XAMPP installation. It's usually located in the php directory within your XAMPP installation folder.
+
+    - Enable GD extension: Open php.ini in a text editor and search for the following line:
+
+ 
+- ;extension=gd
+
+ - Remove the semicolon (;) at the beginning of the line to uncomment it:
+
+
+ - extension=gd
+
+- Restart Apache: After making this change, you need to restart the Apache server through the XAMPP control panel for the changes to take effect.
+
+  -  Open XAMPP Control Panel.
+  -  Stop Apache.
+  -  Start Apache again.
+3. **Clone Repository**: Clone this repository into your `htdocs` directory of XAMPP or the respective directory of your server setup.
 git clone https://github.com/Kisheo/PHP-Image-Combiner.git
-3. **Configure Script**: Place your TrueType font file in the same directory as the script and update the `$font` variable in `imageprocessor.php` to match the name of your font file.
+4. **Configure Script**: Place your TrueType font file in the same directory as the script and update the `$font` variable in `imageprocessor.php` to match the name of your font file.
 
 ## Usage
 
