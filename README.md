@@ -24,9 +24,10 @@ git clone https://github.com/Kisheo/PHP-Image-Combiner.git
 ## Usage
 
 1. **Prepare Images**: Copy the images you want to process into the `images` directory located in the same directory as `imageprocessor.php`.
-2. **Run Script**: Navigate to `http://localhost/your-repo-name/imageprocessor.php` in your web browser. Replace `your-repo-name` with the actual name of your repository.
-3. **View Results**: Processed images will be saved in the `processed_img` directory. You can view or download them from there.
-4. The script works with jpg files.
+2. If images folder does not exist, create it manually.
+3. **Run Script**: Navigate to `http://localhost/your-repo-name/imageprocessor.php` in your web browser. Replace `your-repo-name` with the actual name of your repository.
+4. **View Results**: Processed images will be saved in the `processed_img` directory. You can view or download them from there.
+5. The script works with jpg files.
 
 ## Customization
 
